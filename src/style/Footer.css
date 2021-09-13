@@ -1,0 +1,26 @@
+.footer {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(31, 31, 31, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .socialMedia {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .socialMedia a {
+  text-decoration: none;
+
+  color: rgb(189, 160, 0);
+}
+.footer .socialMedia svg {
+  font-size: 30px;
+}
+.copyright {
+  color: rgb(189, 160, 0);
+}

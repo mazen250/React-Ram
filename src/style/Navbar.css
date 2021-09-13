@@ -1,0 +1,109 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(31, 31, 31, 1);
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.rightSide a {
+  text-decoration: none;
+  font-size: 24px;
+  margin-left: 30px;
+  color: rgb(189, 160, 0);
+  transition: all 0.5s;
+}
+.rightSide a:hover {
+  color: rgb(109, 107, 107);
+}
+.rightSide button {
+  display: none;
+  transition: all 0.5s;
+}
+.hiddenLinks {
+  display: none;
+  transition: all 0.5s;
+}
+.rightSide {
+  display: flex;
+  justify-content: flex-end;
+}
+#open .hiddenLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: all 0.5s;
+}
+#open img {
+  display: none;
+  transition: all 0.5s;
+}
+#open a {
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 10px;
+  color: rgb(189, 160, 0);
+  transition: all 0.5s;
+}
+
+#open a:hover {
+  color: rgb(87, 87, 87);
+}
+@media only screen and (max-width: 916px) {
+  .navbar .rightSide a {
+    font-size: 20px;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+  .navbar .rightSide a {
+    font-size: 17px;
+    margin-left: 12px;
+  }
+}
+/* swar fo2 ba3dha */
+@media only screen and (max-width: 580px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar .rightSide a {
+    display: none;
+    transition: all 0.5s;
+  }
+  .navbar {
+    height: 80pxpx;
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s;
+  }
+
+  .rightSide button {
+    display: block;
+    transition: all 0.5s;
+  }
+  .rightSide svg {
+    font-size: 50px;
+    color: rgb(189, 160, 0);
+    transition: all 0.5s;
+  }
+  .rightSide svg:hover {
+    color: rgb(46, 46, 46);
+  }
+}

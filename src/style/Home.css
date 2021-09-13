@@ -1,0 +1,126 @@
+.home {
+  background-color: #e6e6e6;
+}
+.header {
+  height: 80vh;
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.header h1 {
+  color: rgb(231, 229, 229);
+  font-size: 40px;
+  margin-top: -200px;
+  margin-bottom: 50px;
+  transition: all 0.6s;
+}
+.header h1 span {
+  color: rgb(44, 44, 44);
+  transition: all 0.8s;
+}
+.header h1 span:hover {
+  color: rgb(189, 160, 0);
+}
+
+.header button {
+  background-color: rgba(109, 106, 106, 0.7);
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.6s;
+  color: rgb(216, 186, 18);
+}
+.header button:hover {
+  transform: scale(1.05);
+  background-color: rgba(109, 106, 106, 0.9);
+}
+@media only screen and (max-width: 400px) {
+  .header h1 {
+    font-size: 30px;
+  }
+  .header button {
+    width: 220px;
+    height: 55px;
+    font-size: 16px;
+  }
+}
+
+.underLine {
+  width: 20vw;
+  height: 0.25rem;
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.employersContainer {
+  display: flex;
+  flex-direction: row;
+  width: 92%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.employerCard {
+  max-width: 28%;
+  max-height: 50vh;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+.underLine2 {
+  width: 10vw;
+  height: 0.25rem;
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.aboutButton {
+  background-color: rgba(31, 31, 31, 1);
+  cursor: pointer;
+  width: 250px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.6s;
+  color: rgb(206, 177, 16);
+  margin-bottom: 50px;
+}
+.aboutButton:hover {
+  transform: scale(1.05);
+  background-color: rgba(31, 31, 31, 0.8);
+  color: rgb(228, 195, 7);
+}
+@media only screen and (max-width: 530px) {
+  .employerCard {
+    width: 80%;
+  }
+  .employersContainer .aboutButton {
+    width: 200px;
+    height: 55px;
+    font-size: 15px;
+  }
+  .underLine2 {
+    margin-bottom: 30px;
+  }
+}
